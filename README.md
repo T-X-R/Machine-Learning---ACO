@@ -13,15 +13,21 @@ Assuming that we know the function of a gene, we can compare the gene with all f
 Ant colony optimization algorithm is a bionic optimization algorithm that simulates the foraging behavior of real ant colonies in nature. It simulates the process of ants looking for food, it can find the shortest path from the origin, through several given demand points, and finally return to the origin. Ant colony optimization also solves the famous traveling salesman problem.
 
 In nature, each ant will leave a substance called pheromone on the route when foraging. Ants transmit information by sensing the concentration of this substance. When choosing the path, ants always tend to move towards the direction of high information cable concentration, and more ants walk on the path with short distance, leaving more pheromones, and the probability of subsequent ants choosing it will be greater; Pheromones on other paths will volatilize over time, which forms a positive feedback mechanism. Finally, the whole ant colony gathers on the shortest path. The brief basic principle of ant colony algorithm is as follows:
-●Ants release pheromones on the path.
-●When you encounter an intersection that you haven't walked through, choose a road at random. At the same time, pheromones related to path length are released.
-●The pheromone concentration is inversely proportional to the path length. Later, when the ants encounter the intersection again, they choose the path with higher pheromone concentration.
-●The pheromone concentration on the optimal path is increasing.
-●Finally, the ant colony finds the optimal feeding path.
+
+- Ants release pheromones on the path.
+
+- When you encounter an intersection that you haven't walked through, choose a road at random. At the same time, pheromones related to path length are released.
+
+- The pheromone concentration is inversely proportional to the path length. Later, when the ants encounter the intersection again, they choose the path with higher pheromone concentration.
+
+- The pheromone concentration on the optimal path is increasing.
+
+- Finally, the ant colony finds the optimal feeding path.
+
 In the first step of each iteration, each ant stochastically constructs a solution, i.e. the order in which the edges in the graph should be followed. In the second step, the paths found by the different ants are compared. The last step consists of updating the pheromone levels on each edge.The brief steps of the Ant colony optimization algorithm are as follows:
-●Initialization.
-●Select the next node for each ant.
-●Update the pheromone matrix.
-●Check termination conditions.
-●Output optimal value.
+- Initialization.
+- Select the next node for each ant.
+- Update the pheromone matrix.
+- Check termination conditions.
+- Output optimal value.
 
